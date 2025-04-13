@@ -64,24 +64,28 @@ fun ShoppingListScreen() {
                 ) {
                     Column {
                         IconButton(onClick = { viewModel.deleteAll() }) {
-                            Icon(
+                            Image(
                                 painter = painterResource(id = R.drawable.delete),
                                 contentDescription = stringResource(R.string.delete_all_desc),
-                                modifier = Modifier.size(28.dp)
+                                modifier = Modifier.size(28.dp),
+                                colorFilter = null
                             )
+
                         }
                         TextButton(onClick = { viewModel.deleteAll() }) {
                             Text(stringResource(R.string.delete_all_button))
                         }
                     }
-
-                    Icon(
+                    Image(
                         painter = painterResource(id = R.drawable.add),
                         contentDescription = stringResource(R.string.add_desc),
                         modifier = Modifier
                             .size(36.dp)
-                            .clickable { showDialog = true }
+                            .clickable { showDialog = true },
+                        alignment = Alignment.Center,
+                        colorFilter = null
                     )
+
                 }
             }
         }
