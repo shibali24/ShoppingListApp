@@ -15,4 +15,6 @@
     <string name="delete_all">Delete All</string>
     <string name="add_item">Add Item</string>
     <string name="name_required">Name and category are required</string>
+    <string name="delete_all_button">Delete All Items</string>
+
 </resources>
