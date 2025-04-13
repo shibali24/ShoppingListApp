@@ -15,7 +15,7 @@ class ShoppingViewModel(application: Application) : AndroidViewModel(application
         application,
         ShoppingDatabase::class.java,
         "shopping-list.db"
-    ).fallbackToDestructiveMigration().build()
+    ).build()
 
     val items = db.itemDao().getAll().stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
 

@@ -124,12 +124,23 @@ fun ShoppingItemRow(item: ShoppingItem, viewModel: ShoppingViewModel) {
             )
             Spacer(modifier = Modifier.width(8.dp))
             Column(Modifier.weight(1f)) {
-                Text(text = item.name)
                 Text(
-                    text = item.description,
-                    style = MaterialTheme.typography.bodySmall
+                    text = item.name,
+                    style = MaterialTheme.typography.bodyLarge
+                )
+                if (item.description.isNotBlank()) {
+                    Text(
+                        text = item.description,
+                        style = MaterialTheme.typography.bodySmall
+                    )
+                }
+                Text(
+                    text = "$${"%.2f".format(item.price)}",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.primary
                 )
             }
+
         }
         Image(
             painter = painterResource(
