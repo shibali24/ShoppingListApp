@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ShoppingListApp</string>
+    <string name="shopping_list_title">Shopping List</string>
+    <string name="add_desc">Add new item</string>
+    <string name="delete_all_desc">Delete all items</string>
+    <string name="delete_item_desc">Delete this item</string>
+    <string name="add_new_item">Add New Item</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_description">Description</string>
+    <string name="item_price">Price</string>
+    <string name="item_category">Category</string>
+    <string name="confirm_add">Add</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="delete_all">Delete All</string>
+    <string name="add_item">Add Item</string>
+    <string name="name_required">Name and category are required</string>
+</resources>
